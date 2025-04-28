@@ -15,3 +15,9 @@ Exposes CPU, Memory, and Disk usage metrics for Prometheus/Grafana monitoring.
 Install dependencies:
 ```bash
 pip install flask psutil
+```
+
+## Usage
+python exporter.py
+
+Access metrics at: http://your-server-ip:8000/metrics
