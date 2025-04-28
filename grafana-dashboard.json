@@ -1,0 +1,86 @@
+{
+  "dashboard": {
+    "id": null,
+    "uid": null,
+    "title": "RHEL Machine Performance",
+    "tags": ["performance", "rhel", "monitoring"],
+    "timezone": "browser",
+    "panels": [
+      {
+        "type": "gauge",
+        "title": "CPU Usage",
+        "targets": [
+          {
+            "expr": "system_cpu_usage",
+            "interval": "",
+            "legendFormat": "CPU",
+            "refId": "A"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "min": 0,
+            "max": 100,
+            "thresholds": {
+              "mode": "percentage",
+              "steps": [
+                { "color": "green", "value": null },
+                { "color": "orange", "value": 70 },
+                { "color": "red", "value": 90 }
+              ]
+            }
+          }
+        },
+        "gridPos": { "h": 8, "w": 8, "x": 0, "y": 0 }
+      },
+      {
+        "type": "gauge",
+        "title": "Memory Usage",
+        "targets": [
+          {
+            "expr": "system_memory_usage",
+            "interval": "",
+            "legendFormat": "Memory",
+            "refId": "A"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "min": 0,
+            "max": 100,
+            "thresholds": {
+              "mode": "percentage",
+              "steps": [
+                { "color": "green", "value": null },
+                { "color": "orange", "value": 70 },
+                { "color": "red", "value": 90 }
+              ]
+            }
+          }
+        },
+        "gridPos": { "h": 8, "w": 8, "x": 8, "y": 0 }
+      },
+      {
+        "type": "gauge",
+        "title": "Disk Usage",
+        "targets": [
+          {
+            "expr": "system_disk_usage",
+            "interval": "",
+            "legendFormat": "Disk",
+            "refId": "A"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "min": 0,
+            "max": 100,
+            "thresholds": {
+              "mode": "percentage",
+              "steps": [
+                { "color": "green", "value": null },
+                { "color": "orange", "value": 70 },
+                { "color": "red", "value": 90 }
+              ]
+            }
+          }
