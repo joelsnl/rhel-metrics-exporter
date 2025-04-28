@@ -1,0 +1,7 @@
+global:
+  scrape_interval: 15s
+
+scrape_configs:
+  - job_name: 'rhel-metrics'
+    static_configs:
+      - targets: ['your-server-ip:8000']
